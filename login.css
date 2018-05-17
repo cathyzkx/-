@@ -1,0 +1,128 @@
+
+/*在webkit内核的浏览器里可以定义滚动条样式,隐藏滚动条*/
+::-webkit-scrollbar {
+		display:none
+	}
+
+body {
+	background: url("picture/loginBG.png") no-repeat;
+	background-size: cover;
+	height: 100vh;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font-family: PingFangSC-Semibold;
+}
+
+/*布局*/
+#mainArea {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+	height: 100vh;
+}
+
+span {
+	display: block;
+	float: left;
+}
+
+#logo {
+	position: absolute;
+  	left: 90px;
+  	top: 34px;
+}
+
+/*白色方框*/
+#mySquare {
+	width: 456px;
+	height: 535px;
+	opacity: 0.75;
+	background: #FFFFFF;
+	box-shadow: 0 2px 20px 0 #EDF1F7;
+	border-radius: 10px;
+	padding: 0px;
+}
+
+#fontBlue {
+  	margin-top: 118px;
+  	text-align: center;
+	font-size: 28px;
+	color: #0077FF;
+	opacity: 1;
+	font-weight: normal;
+}
+
+#loginArea {
+	position: relative;
+	top: -80px;
+	left: 35px;
+}
+
+/*表单元素*/
+input[type="text"], input[type="password"]{
+	border: 1px solid #BFCBD9;
+	border-radius: 4px;
+	height: 36px;
+	width: 251px;
+	margin-left: 10px;
+}
+
+button {
+	background: #0077FF;
+	opacity: 1;
+	border-radius: 2px;
+	height: 40px;
+	width: 168px;
+	border: 0px;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+.fontBlack {
+	width: 100px;
+	font-size: 20px;
+	color: #000000;
+	opacity: 1;
+	text-align: right;
+	margin-top: 4px;
+}
+
+.gap {
+	height: 20px;
+	margin-left: 110px;
+	font-size: 12px;
+	color: red;
+}
+
+
+#forgetPassword{
+	width: 340px;
+	text-align: right;
+	margin-top: 7px;
+	margin-left: 25px;
+	font-size: 14px;
+}
+
+/*圆形及圆内标题*/
+.myCircle {
+	position: relative;
+  	left: 161px;
+  	top: -245px;
+	width: 134px;
+	height: 134px;
+	background: #F5A623;
+	border-radius: 67px;
+	
+}
+
+#fontWhite {
+	position: relative;
+	top: 54px;
+	text-align: center;
+	font-size: 22px;
+	color: #FFFFFF;
+	font-weight: normal;
+}

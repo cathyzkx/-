@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>登录-熊猫工业机器人运维平台</title>
+<link rel="stylesheet" type="text/css" href="login.css" />
+</head>
+
+<body>
+	<!-- 左上角logo图案 -->
+	<img id="logo" src="picture/logo.png" alt="Logo" />
+	<div id="mainArea">
+		<!-- 白底矩形框 -->
+		<div id="mySquare">
+			<h2 id="fontBlue">熊猫工业机器人运维平台</h2>
+			
+			<!-- 蓝色圆形及圆内白字 -->
+			<div class=myCircle style="background: #0077FF;">
+				<h1 id="fontWhite">登录界面</h1>
+			</div>
+			
+			<!--表单区域-->
+			<form id="loginArea">
+				<div>
+					<span class=fontBlack style="width: 85px; margin-right: 15px;"><label for="username">用户名</label></span>
+					<input id="username" type="text" onfocus="focus_username(this)" onblur="check_username(this, result_username)" />
+					<br /><span class=gap id="result_username"></span><br />
+				</div>
+				<div>
+					<span class=fontBlack style="width: 85px; margin-right: 15px;"><label for="password">密&nbsp&nbsp&nbsp&nbsp码</label></span>
+					<input id="password" type="password" onblur="check_password(this.value, result_password)" />
+					<br /><span class=gap id="result_password"></span>
+				</div>
+				<div id="forgetPassword">
+					<a style="color: #9B9B9B; text-decoration: none;" href="retrivePassword.html">忘记密码？</a>
+				</div>
+				<div style="margin-top: 58px; margin-left: 30px;">
+					<button style="width: 336px;" onclick="login(event)">登录</button>
+				</div>
+			</form>	
+		</div>
+	</div>
+	<script type="text/javascript" src="login.js"></script>
+</body>
+</html>
